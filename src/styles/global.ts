@@ -1,0 +1,37 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+        background: ${props => props.theme["base-background"]};
+        -webkit-font-smoothing: antialiased;
+        color: ${props => props.theme["base-title"]};
+    }
+
+    h1, h2, h3, h4, h5, p, span {
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+`
