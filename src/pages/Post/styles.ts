@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
-
 export const PostContainer = styled.div`
     margin-top: -5rem;
 `
@@ -17,7 +16,6 @@ export const TitlePostContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
-
 
     header {
         display: flex;
@@ -57,4 +55,13 @@ export const LinkNavigate = styled(NavLink)`
 
 export const PostContentContainer = styled.div`
     padding: 2.5rem 2rem;
+    
+    h1, h2, h3 {
+        color: ${props => props.theme.blue};
+    }
+    
+    code{
+        border-radius: 10px;
+    }
+
 `

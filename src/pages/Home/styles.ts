@@ -40,17 +40,13 @@ export const NameAndIconContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    font-weight: bold;
     width: 100%;
     gap: 0.5rem;
 
     > h1 {
         flex: 1;
         font-size: 1.5rem;
-    }
-
-    span {
-        font-weight: bold;
     }
 
     div {

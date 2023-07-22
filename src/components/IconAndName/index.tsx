@@ -2,7 +2,7 @@ import { IconAndNameContainer } from "./style";
 
 interface IconAndNameProps {
     icon: string;
-    name: string;
+    name: string | number;
 }
 export function IconAndName({ icon, name }:IconAndNameProps  ) {
     return(

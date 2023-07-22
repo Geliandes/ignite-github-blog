@@ -38,6 +38,11 @@ export const PostTitle = styled.div`
         font-size: 1.25rem;
         word-wrap: break-word;
         flex: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
     }
 
     span {
