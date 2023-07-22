@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const HomeContainer = styled.div`
+    padding-bottom: 5rem;
 
 `
 
@@ -104,4 +105,11 @@ export const SearchPostContainer = styled.div`
         color: ${props => props.theme["base-text"]};
         
     }
+`
+
+export const PostsContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 3rem;
 `

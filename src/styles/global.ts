@@ -20,6 +20,10 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.6;
     }
 
+    span {
+        color: ${props => props.theme["base-span"]};
+    }
+
     a {
         text-decoration: none;
     }

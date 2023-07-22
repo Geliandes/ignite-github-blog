@@ -8,7 +8,7 @@ export function IconAndName({ icon, name }:IconAndNameProps  ) {
     return(
         <IconAndNameContainer>
             <img src={icon} alt="name" />
-            {name}
+            <span>{name}</span>
             
         </IconAndNameContainer>
     )

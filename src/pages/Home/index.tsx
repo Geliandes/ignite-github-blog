@@ -1,11 +1,12 @@
-import { HomeContainer, SummaryContainer,DetailsContainer, NameAndIconContainer, IconContainer, SearchPostContainer } from "./styles";
+import { HomeContainer, SummaryContainer,DetailsContainer, NameAndIconContainer, IconContainer, SearchPostContainer, PostsContainer } from "./styles";
 import perfilImg from '../../assets/perfil.jpg'
 import { NavLink } from "react-router-dom";
-import { IconAndName } from "./components/IconAndName";
+import { IconAndName } from "../../components/IconAndName";
 import arrowIcon from '../../assets/arrow-top-right-icon.svg'
 import githubIcon from '../../assets/github-logo.svg'
 import jobIcon from '../../assets/job-icon.svg'
 import perfilIcon from '../../assets/perfil-icon.svg'
+import { PostCard } from "./components/PostCard";
 
 
 export function Home() {
@@ -46,6 +47,13 @@ export function Home() {
                 </div>
                 <input placeholder="Buscar conteúdo"></input>
             </SearchPostContainer>
+
+            <PostsContainer>
+                <PostCard />
+                <PostCard />
+                <PostCard />
+                <PostCard />
+            </PostsContainer>
         </HomeContainer>
     )
 }
